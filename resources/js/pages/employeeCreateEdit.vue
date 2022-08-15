@@ -1,10 +1,13 @@
 <template lang="">
     <div class="container col-md-6">
-        <h2 class="text-danger my-3">Employee Register</h2>
+        <h2 class="text-danger my-3">
+            Employee {{ isediting == "edit" ? "Update" : "Register" }}
+        </h2>
         <form class="row g-3">
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Name</label>
                 <input
+                    autocomplete="off"
                     v-model="name"
                     type="text"
                     class="form-control"
@@ -21,6 +24,7 @@
             <div class="col-md-6">
                 <label for="inputEmail" class="form-label">Email</label>
                 <input
+                    autocomplete="off"
                     type="email"
                     v-model="email"
                     class="form-control"
@@ -37,6 +41,7 @@
             <div class="col-md-6">
                 <label for="inputId" class="form-label">ID</label>
                 <input
+                    autocomplete="off"
                     type="type"
                     v-model="employee_id"
                     class="form-control"
@@ -106,6 +111,7 @@
                     >Accommodation requests</label
                 >
                 <input
+                    autocomplete="off"
                     v-model="accommodation_requests"
                     type="text"
                     class="form-control"

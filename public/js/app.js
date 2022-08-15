@@ -2431,7 +2431,7 @@ var render = function render() {
     staticClass: "container col-md-6"
   }, [_c("h2", {
     staticClass: "text-danger my-3"
-  }, [_vm._v("Employee Register")]), _vm._v(" "), _c("form", {
+  }, [_vm._v("\n        Employee " + _vm._s(_vm.isediting == "edit" ? "Update" : "Register") + "\n    ")]), _vm._v(" "), _c("form", {
     staticClass: "row g-3"
   }, [_c("div", {
     staticClass: "col-md-6"
@@ -2449,6 +2449,7 @@ var render = function render() {
     }],
     staticClass: "form-control",
     attrs: {
+      autocomplete: "off",
       type: "text",
       id: "inputEmail4"
     },
@@ -2488,6 +2489,7 @@ var render = function render() {
     }],
     staticClass: "form-control",
     attrs: {
+      autocomplete: "off",
       type: "email",
       id: "inputEmail"
     },
@@ -2527,6 +2529,7 @@ var render = function render() {
     }],
     staticClass: "form-control",
     attrs: {
+      autocomplete: "off",
       type: "type",
       id: "inputId"
     },
@@ -2660,6 +2663,7 @@ var render = function render() {
     }],
     staticClass: "form-control",
     attrs: {
+      autocomplete: "off",
       type: "text",
       id: "inputAddress",
       placeholder: ""
